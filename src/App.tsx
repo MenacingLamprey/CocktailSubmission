@@ -1,41 +1,39 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import { createTheme, ThemeProvider } from '@mui/material'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createTheme, ThemeProvider, Box } from '@mui/material'
 
 import { DrinkContextProvider } from './DrinkContext';
-
 import { DrinkForm } from './DrinkForm';
-// import { NavBar } from './NavBar'
-// import { IngredientForm } from './IngredientForm';
+import { NavBar } from './NavBar'
+import { IngredientForm } from './IngredientForm';
 
 import './App.css'
 
 function App() {
   
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/CocktailSubmission",
-  //     element: <Box>
-  //       <NavBar/>
-  //       <DrinkForm />
-  //     </Box>
-  //   },
-  //   {
-  //     path : '/pdf',
-  //     element : <Box>
-  //       <NavBar/>
-  //       <CocktailSubmissionForm/>
-  //     </Box>
-  //   },
-  //   {
-  //     path : '/ingredients',
-  //     element : <Box>
-  //       <NavBar/>
-  //       <IngredientForm/>
-  //     </Box>
-  //   }
-  // ]);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Box>
+        <NavBar/>
+        <DrinkForm />
+      </Box>
+    },
+    {
+      path : '/pdf',
+      element : <Box>
+        <NavBar/>
+        <DrinkForm/>
+      </Box>
+    },
+    {
+      path : '/ingredients',
+      element : <Box>
+        <NavBar/>
+        <IngredientForm/>
+      </Box>
+    }
+  ]);
 
   const theme = createTheme({
     components: {
@@ -55,8 +53,7 @@ function App() {
       <QueryClientProvider client={new QueryClient()}>
       <ThemeProvider theme={theme}>
         <DrinkContextProvider>
-          <DrinkForm />
-          {/* <RouterProvider router={router} /> */}
+          <RouterProvider router={router} />
         </DrinkContextProvider>
       </ThemeProvider>
       </QueryClientProvider>
