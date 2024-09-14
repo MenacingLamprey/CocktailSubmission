@@ -15,7 +15,7 @@ function App() {
   
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/CocktailSubmission",
       element: <Box>
         <NavBar/>
         <DrinkForm />
