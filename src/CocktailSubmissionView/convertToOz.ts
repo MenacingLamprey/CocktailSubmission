@@ -1,5 +1,5 @@
 export const convertToOz = (unit : string) => {
-  if (unit == "dash" ) unit = 'dashes'
+  if (unit == "dash" || "Dash" || "Dashes") unit = 'dashes'
   switch(unit) { 
     case 'dashes' : { 
       return 1/48
