@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider, Box } from '@mui/material'
 
 import { DrinkContextProvider } from './DrinkContext';
@@ -11,9 +11,9 @@ import './App.css'
 
 function App() {
   
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
-      path: "/CocktailSubmisson",
+      path: "/",
       element: <Box>
         <NavBar/>
         <DrinkForm />
