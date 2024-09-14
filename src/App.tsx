@@ -55,7 +55,8 @@ function App() {
       <QueryClientProvider client={new QueryClient()}>
       <ThemeProvider theme={theme}>
         <DrinkContextProvider>
-          <RouterProvider router={router} />
+          <DrinkForm />
+          {/* <RouterProvider router={router} /> */}
         </DrinkContextProvider>
       </ThemeProvider>
       </QueryClientProvider>
