@@ -8,6 +8,7 @@ import { NavBar } from './NavBar'
 import { IngredientForm } from './IngredientForm';
 
 import './App.css'
+import { CocktailSubmissionView } from './CocktailSubmissionView';
 
 function App() {
   
@@ -23,7 +24,7 @@ function App() {
       path : '/pdf',
       element : <Box>
         <NavBar/>
-        <DrinkForm/>
+        <CocktailSubmissionView />
       </Box>
     },
     {

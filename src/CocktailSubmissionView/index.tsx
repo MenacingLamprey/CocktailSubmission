@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { DrinkContext } from "../DrinkContext";
 
 
-export const CocktailSubmissionForm = () => {
+export const CocktailSubmissionView = () => {
   const { drink } = useContext(DrinkContext) as IDrinkContext
  
   if(!drink.drinkName && !drink) return <Box>No Drink Currently Set!</Box>
