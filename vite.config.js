@@ -20,7 +20,8 @@ export default defineConfig(function (_a) {
             port: 3000
         },
         define: {
-            'process.env': __assign({}, process.env)
+            'process.env': __assign({}, process.env),
+            base: "/CocktailSubmission",
         }
     };
 });
