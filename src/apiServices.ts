@@ -1,5 +1,5 @@
 // const API_URL = import.meta.env.VITE_API_SERVER_URL + '/ingredients'
-const API_URL = "https://soiree-server-41a98b20c694.herokuapp.com/" + "/ingredients"
+const API_URL = "https://soiree-server-41a98b20c694.herokuapp.com" + "/ingredients"
 console.log(API_URL)
 
 export const getIngredientsForDrinkRecipe = async () => {
