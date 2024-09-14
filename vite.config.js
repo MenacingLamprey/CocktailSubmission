@@ -15,13 +15,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(function (_a) {
     var mode = _a.mode;
     return {
+        base: './',
         plugins: [react()],
         server: {
             port: 3000
         },
         define: {
             'process.env': __assign({}, process.env),
-            base: "/CocktailSubmission",
         }
     };
 });

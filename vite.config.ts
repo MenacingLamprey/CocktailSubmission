@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
+  base: './',
   plugins: [react()],
   server :{
     port :3000
@@ -12,5 +13,4 @@ export default defineConfig(({ mode }) => {
     'process.env': {
       ...process.env,
   },
-  base: "/CocktailSubmission",
 }}})
