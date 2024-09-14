@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from '@mui/material'
 
 import { DrinkContextProvider } from './DrinkContext';
 
-import { CocktailSubmissionForm } from './CocktailSubmissionView'
+import { DrinkForm } from './DrinkForm';
 // import { NavBar } from './NavBar'
 // import { IngredientForm } from './IngredientForm';
 
@@ -55,7 +55,7 @@ function App() {
       <QueryClientProvider client={new QueryClient()}>
       <ThemeProvider theme={theme}>
         <DrinkContextProvider>
-          <CocktailSubmissionForm />
+          <DrinkForm />
           {/* <RouterProvider router={router} /> */}
         </DrinkContextProvider>
       </ThemeProvider>

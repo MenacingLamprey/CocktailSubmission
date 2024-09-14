@@ -15,7 +15,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(function (_a) {
     var mode = _a.mode;
     return {
-        base: './',
+        base: "https://menacinglamprey.github.io/CocktailSubmission/",
         plugins: [react()],
         server: {
             port: 3000
