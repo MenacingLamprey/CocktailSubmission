@@ -1,5 +1,5 @@
-const API_URL = import.meta.env.VITE_API_SERVER_URL + '/ingredients'
-
+// const API_URL = import.meta.env.VITE_API_SERVER_URL + '/ingredients'
+const API_URL = "http://localhost:3001" + "/ingredients"
 console.log(API_URL)
 
 export const getIngredientsForDrinkRecipe = async () => {
