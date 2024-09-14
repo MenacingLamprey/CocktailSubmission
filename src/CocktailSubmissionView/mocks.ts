@@ -15,7 +15,6 @@ const simpleSyrupRecipe : IIngredientRecipe = {
   ],
   instructions : "Mix sugar and hot water, stir untill sugar is dissolved",
   recipeYield : '1500 ml',
-  isPublic : true
 }
 
 export const drink : IDrink = {
@@ -26,7 +25,6 @@ export const drink : IDrink = {
       garnish : "Orange Expression",
       method : "Stirred",
       numIngredients : 3,
-      isPublic : true,
       ice : "large ice cube",
       description : "Pour batch into mxing glass, stir for around 40 seconds. Pour in to rocks glass. Place large ice cube. Express orange and place peel in glass",
       ingredients : [
@@ -35,25 +33,25 @@ export const drink : IDrink = {
           unit : "oz",
           ingredient : {
             ingredientName : "Bourbon",
-            isBatchable : true
-          }
+          },
+          isBatchable : true
         },
         {
           amount : 2,
           unit : "dashes",
           ingredient : {
             ingredientName : "Angostura Bitters",
-            isBatchable : true
-          }
+          },
+          isBatchable : true
         },
         {
           amount : .25,
           unit : "oz",
           ingredient : {
             ingredientName : "Simple Syrup",
-            isBatchable : true,
             recipes : [simpleSyrupRecipe]
-          }
+          },
+          isBatchable : true
         }         
       ]
     }

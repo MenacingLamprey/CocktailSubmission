@@ -9,7 +9,6 @@ export interface FormValues {
 export const formatRecipe = (recipe : FormValues) : IIngredientRecipe => {
   return {
     instructions : recipe.instructions,
-    isPublic : true,
     recipeYield : recipe.recipeYield,
     childIngredients : recipe.ingredients.map(ingredient => {
       const {amount, unit } = ingredient

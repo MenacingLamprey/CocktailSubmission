@@ -14,13 +14,11 @@ export type FormValues = {
 
 export const formatRecipe = (recipe: FormValues) : IDrinkRecipe => {
   return {
-    recipeName : recipe.recipeName,
     numIngredients : recipe.ingredients.length,
     glass : recipe.glass,
     garnish : recipe.garnish,
     method : recipe.method,
     ice : recipe.ice,
-    isPublic : true,
     ingredients : recipe.ingredients.map(ingredient => {
       return {
         amount : ingredient.amount,
